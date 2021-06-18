@@ -14,7 +14,8 @@ client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
-//this fires when the BOT STARTS DO NOT TOUCH client.on("message", message => {
+//this fires when the BOT STARTS DO NOT TOUCH 
+client.on("message", message => {
   if (message.content.startsWith(PREFIX + "man gif")) {
     let man = [
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
@@ -48,7 +49,11 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
       });
   }
 });
+
+
 client.on(`ready`, () => {	
+
+
 //////////////
 
 ////////
